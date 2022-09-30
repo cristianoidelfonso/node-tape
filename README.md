@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/cristianoidelfonso/node-tape/actions/workflows/node.js.yml/badge.svg)](https://github.com/cristianoidelfonso/node-tape/actions/workflows/node.js.yml)
+
 # TDD com a biblioteca Tape em ambiente Node.js
 
 O TDD (Test Driven Development ou Desenvolvimento Orientado à Testes) é uma técnica criada por Kent Beck, um famoso programador e autor de livros, 

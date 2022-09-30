@@ -1,0 +1,16 @@
+{
+  "name": "tape",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape src/tests/**/*-test.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tap-spec": "^5.0.0",
+    "tape": "^5.6.1"
+  }
+}

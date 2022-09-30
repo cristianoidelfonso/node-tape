@@ -86,7 +86,7 @@ module.exports = Calculator;
 
 Executaremos no terminal o comando "*npm test*", e o nosso primeiro teste deverá falhar, porque o método *add* ainda não existe na classe *Calculator.* 
 
-![tdd-node002.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.002.jpeg)
+![tdd-node002.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node002.JPG)
 
 Então, a partir de agora vamos para o segundo passo do TDD, que é implementar uma lógica de forma que o teste passe. A classe *Calculator* deve ficar assim*:* 
 
@@ -108,7 +108,8 @@ module.exports = Calculator;
 
 Feito isso, rodaremos novamente a chamada aos testes, com o comando "*npm test*", e agora o nosso teste deve passar. O resultado segue na imagem abaixo.
 
-![](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.003.png)![tdd-node003.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.004.jpeg)
+![](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.003.png)
+![tdd-node003.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node003.JPG)
 
 Agora que o nosso teste passou, o terceiro passo do TDD seria refatorar o método *add* da classe *Calculator*  de acordo com as regras de negócio da aplicação. Como nossa aplicação é bem trivial, aqui não faremos este passo e adicionaremos um segundo caso de teste, que será a divisão.
 
@@ -133,7 +134,7 @@ test('#Calculator - Share - should return the value of dividing two numbers', as
 
 Ao rodar novamente o comando "*npm test*", esse novo teste deve falhar, porque não existe implementação do método *share* na classe Calculator. Veja o resultado:
 
-![tdd-node004.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.005.jpeg)
+![tdd-node004.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node004.JPG)
 
 Então passamos para a implementação do método *share* na classe Calculator, que deve ficar como abaixo:
 
@@ -157,7 +158,7 @@ class Calculator {
 
 Agora rodando mais um vez o comando "*npm test*"*,* nosso segundo caso de teste também passa, e sem afetar o primeiro caso. Veja o resultado:
 
-![tdd-node005.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.006.jpeg)
+![tdd-node005.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node005.JPG)
 
 Nosso segundo caso de teste passou, mas o método *share* é um pouco mais complexo e como regra de negócio, deve verificar se o segundo parâmetro é igual a zero, portanto, devemos refatorar o método, executando assim o terceiro passo do TDD. Para isso, criaremos um novo caso de teste, que verificará o retorno do método *share*  quando o segundo parametro passado for igual a zero.
 
@@ -183,7 +184,7 @@ test(`#Calculator - share - should return a message
 
 Rodando mais uma vez o comando "*npm test*"*,* nosso novo caso de teste deve falhar, sem afetar os demais casos. Veja abaixo:
 
-![tdd-node006.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.007.jpeg)
+![tdd-node006.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node006.JPG)
 
 Então agora vamos a refatoração do método *share* na classe *Calculator,* onde adicionaremos uma condicional para verificar se o segundo parametro é igual a zero, e se for, retornar uma mensagem.
 
@@ -216,7 +217,7 @@ module.exports = Calculator;
 
 Terminada a refatoração, ao executar mais uma vez o comando "*npm test*", nossos três casos de teste escritos até o momento devem passar. Veja o resultado:
 
-![](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.008.png)![tdd-node007.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.009.jpeg)
+![tdd-node007.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node007.JPG)
 
 Para finalizar o nosso tutorial da calculadora simples usando TDD, escreveremos mais dois casos de teste, o de multiplicação e o de subtração.
 
@@ -242,7 +243,7 @@ test(`#Calculator - multiply - should return the value of multiplying two number
 
 O resultado da falha ao rodar o comando "*npm test*".
 
-![tdd-node008.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.010.jpeg)
+![tdd-node008.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node008.JPG)
 
 A implementação do método *multiply* na classe *Calculator* .
 
@@ -280,7 +281,7 @@ module.exports = Calculator;
 
 O resultado de todos os testes passando.
 
-![](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.011.png)![tdd-node009.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.012.jpeg)
+![tdd-node009.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node009.JPG)
 
 E agora por fim o caso de teste do método *subtract.*
 
@@ -302,7 +303,7 @@ test(`#Calculator - subtract - should return the value of subtraction of two num
 
 A falha do caso de teste acima, porque o método *subtract* ainda não existe na classe *Calculator*.
 
-![tdd-node010.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.013.jpeg)
+![tdd-node010.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node010.JPG)
 
 A implementação do método *subtract* na classe *Calculator.*
 
@@ -346,6 +347,23 @@ module.exports = Calculator;
 
 E o resultado na imagem abaixo mostrando todos os testes passando.
 
-![](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.011.png)![tdd-node011.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.014.jpeg)
+![tdd-node011.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node011.JPG)
 
-Este foi um tutorial bastante simples, apresentando o conceito de forma bem superficial e o fluxo de trabalho da técnica TDD. Este projeto esta disponível em: https://github.com/cristianoidelfonso/node-tape
+<br>
+Este foi um tutorial bastante simples, apresentando o conceito de forma superficial e o fluxo de trabalho da técnica TDD. 
+
+<hr>
+
+### 1) Clone project
+`git clone https://github.com/cristianoidelfonso/node-tape.git`
+
+### 2) Go to root project
+`cd node-tape`
+
+### 3) Install Package local
+`npm install`
+
+### 4) Running tests (Development)
+`npm test`
+
+<hr>

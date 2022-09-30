@@ -34,39 +34,8 @@ E editaremos o arquivo *package.json*, na seção de scripts.
 
 Ao final dos passos acima, o arquivo *package.json* deve ficar assim:
 
-<strong>
-{
+![tdd-node012.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node012.JPG)
 
-`  `"name": "tape",
-
-`  `"version": "1.0.0",
-
-`  `"description": "",
-
-`  `"main": "index.js",
-
-`  `"scripts": {
-
-`    `"test": "tape src/tests/\*\*/\*-test.js | tap-spec"
-
-`  `},
-
-`  `"keywords": [],
-
-`  `"author": "",
-
-`  `"license": "ISC",
-
-`  `"devDependencies": {
-
-`    `"tap-spec": "^5.0.0",
-
-`    `"tape": "^5.6.1"
-
-`  `}
-
-}
-</strong>
 
 ## Criando a estrutura de pastas. 
 
@@ -80,8 +49,7 @@ Ao final dos passos acima, o arquivo *package.json* deve ficar assim:
 
 Dentro da pasta *app,* criaremos o arquivo *calculator.js*, e dentro da pasta *tests*, criaremos o arquivo *calculator-test.js*. Segue abaixo imagem da estrutura de pastas e arquivos.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
-![tdd-node001.JPG](Aspose.Words.1f297163-ff3d-423d-b8fb-bb07d7c1e20e.001.jpeg)
+![tdd-node001.JPG](https://github.com/cristianoidelfonso/node-tape/blob/master/screenshots/tdd-node001.JPG)
 
 Neste ponto, começaremos escrever primeiro nosso caso de teste numero um, e devemos fazer assim porque esse é o fluxo do TDD.
 

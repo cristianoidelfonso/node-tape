@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape src/tests/**/*-test.js | tap-spec"
+    "test": "nyc tape src/tests/**/*-test.js | tap-spec",
+    "posttest": "nyc report --reporter=html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "nyc": "^15.1.0",
     "tap-spec": "^5.0.0",
     "tape": "^5.6.1"
   }
